@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scary Halloween Party</title>
+    <link rel="stylesheet" href="./styles/halloween.css">
+    <!-- enlazo un javascript-->
+    <script src="javascripts/halloween.js"></script>
+    <link rel="shortcut icon" href="/images/favicon.jpg">
+
+</head>
+
+<body>
+    <audio id="grito">
+        <source src="sounds/grito.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="cancion">
+        <source src="sounds/ringtones-halloween.mp3">
+    </audio>
+    <audio id="puerta">
+        <source src="sounds/toc-puerta_1.mp3">
+    </audio>
+    <div id="container">
+        <h1 class="titulo">Halloween Party Invitation</h1>
+
+        <!-- efecto bruja y chirrido-->
+        <p id="p1">Do not kick <br>on the window</p>
+        <div id="ventana" onclick="mostrarBruja(); sonar('grito')" onmouseout="ocultarBruja(); parar('grito')"
+            onclick="mostrar('dialogo'); sonar('grito')" onmouseout="ocultar('dialogo'); parar('grito')">
+            <p id="dialogo"></p>
+        </div>
+        <div id="calabaza" onclick="mostrarCalabazas(); sonar('cancion')"
+            onmouseout="ocultarCalabazas(); parar('cancion')" onclick=" sonar('cancion'); parar('cancion')">
+        <p id="p2">Try to talk to the pumpkin...</p>
+        </div>
+        <div id="fantasma" onclick="mostrarFantasma(); sonar('puerta')" onmouseout="ocultarFantasma(); parar('puerta')"
+            onclick="mostrar('dialogo2'); sonar('puerta')" onmouseout="ocultar('dialogo2'); parar('puerta')">
+            <p id="dialogo2"></p>
+            <p id="p3">Knock on the door</p>
+        </div>
+
+
+        <img id="fantasmasImg" src="./images/gifFantasma.gif" >
+        <img id="bruja" src="./images/bruja.gif">
+        <img id="calabazas" src="./images/gifCalabazas.gif">
+
+
+    </div>
+
+</body>
+
+</html>

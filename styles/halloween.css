@@ -1,0 +1,115 @@
+/****************  hoja de estilo para la presentación de halloween  **********************/
+/********                   IMPORTANTE: no es responsive             **********************/
+
+body{
+    background-color: black;
+ 
+}
+@font-face {
+    font-family: halloween;
+    src: url(../fonts/halloweenfuente.otf);
+}
+
+#container {
+    width: 1600px; /*ancho de la imagen */
+    height: 900px; /* alto de la imagen*/
+    margin: auto; /* centrado de la imagen*/
+    font-family: halloween;
+    background-image: url("../images/wallpaper.jpg");
+    position: relative; /* el container se mueve */
+}
+.titulo {
+    position:relative;
+    font-size: 90px;
+    text-align: center;
+    padding: 0.7em;
+    color: orange;
+    text-shadow: 5px 5px 5px #ff560f;    
+}
+#p1 {
+    font-size: 25px;
+    position: absolute;
+    top:250px;
+    left:530px;
+    color:rgb(226, 196, 26);
+    text-shadow: 5px 5px 5px #ff970f; 
+    text-align:center;
+}
+
+#p2 {
+    font-size: 25px;
+    position: absolute;
+    top:200px;
+    left:20px;
+    color:rgb(226, 196, 26);
+    text-shadow: 5px 5px 5px #ff970f; 
+    text-align:center;
+}
+
+#p3 {
+    font-size: 25px;
+    position: absolute;
+    top:50px;
+    left:20px;
+    color:rgb(226, 196, 26);
+    text-shadow: 5px 5px 5px #ff970f; 
+    text-align:center;
+}
+#ventana {
+    position: absolute;
+    top:260px;
+    left:490px;
+    width: 200px;
+    height: 100px;
+    
+}
+#dialogo{
+    position: absolute;
+    top:200px;
+    left: 400px;
+   color: white;
+}
+#calabaza{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    left:430px;
+    top: 600px;
+}
+#calabazas{
+    position: absolute;
+    top:350px;
+    left:360px;
+    width: 500px;
+    height: 500px;
+    visibility: hidden;
+}
+#bruja {    
+    position: absolute;
+    top:350px;
+    left:300px;
+    width: 500px;
+    height: 500px;
+    visibility: hidden;
+}
+#fantasma{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 600px;
+    left: 160px;
+}
+#fantasmasImg{
+    position: absolute;
+    top:400px;
+    left: 100px;
+    width: 200px;
+    height: 200px;
+    visibility: hidden;
+}
+#dialogo2{
+    position: relative;
+    bottom: 200px;
+    left: 150px;
+    color: white;
+}
